@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currancy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenor">
+        <h2>Corruncy Exchenger</h2>
+        <form action="submit">
+        <div class="amount">
+            <p>enter amount</p>
+            
+            <input value="1" type="number" placeholder="Enter amount">
+        </div>
+        <div class="dropedown">
+            <div class="from">
+                <label for="from">FROM</label>
+                <div class="select-contenor">
+                    <img src="https://flagsapi.com/US/flat/64.png" alt="from-nation-flag">
+                    <select id="from" name="from"></select>
+                </div>
+            </div>
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            <div class="to">
+                <label for="to">TO</label>
+                <div class="select-contenor">
+                    <img src="https://flagsapi.com/IN/flat/64.png" alt="to-nation-flag">
+                    <select id="to" name="to"></select>
+                </div>
+            </div>
+        </div>
+        <div class="msg">1USD = 80INR</div>
+        <button type="button">Get Exchenge Rate</button>
+    </form>
+    </div>
+    <script src="codes.js"></script>
+    <script src="curr.js"></script>
+</body>
+</html>
